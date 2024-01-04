@@ -6,7 +6,7 @@ main()
     scanf("%d",&a);
     printf("enter a second number \n");
     scanf("%d",&b);
-for(i=2;a!=1,b!=1;)
+for(i=2;a!=1 || b!=1;)
 {
     c=a%i;
     d=b%i;
