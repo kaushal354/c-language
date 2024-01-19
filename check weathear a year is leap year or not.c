@@ -1,18 +1,21 @@
-#include<stdio.h>
-main()
-{
-int x;
-printf("enter a year \n");
-scanf("%d",&x);
-if(x%4==0)
-{
-printf("the year is leap year");
+#include <stdio.h>
+int main() {
+  int year;
+  printf("Enter a year: ");
+  scanf("%d", &year);
 
-}
-else
-{
-printf("the year is not a leap year");
+  if (year % 400 == 0) {
+    printf("%d is a leap year.\n", year);
+  }
 
-}
-getch();
+  else if (year % 100 == 0) {
+    printf("%d is not a leap year.\n", year);
+  }
+  else if (year % 4 == 0) {
+    printf("%d is a leap year.\n", year);
+  }
+  else {
+    printf("%d is not a leap year.\n", year);
+  }
+  return 0;
 }
